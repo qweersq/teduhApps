@@ -37,20 +37,20 @@ const User = sequelize.define('users', {
     },
     identity_number: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true,
     },
     address: {
         type: DataTypes.STRING,
-        allowNull: false,
+        allowNull: true,
     },
     gender: {
         type: DataTypes.ENUM('male', 'female', 'other'),
-        allowNull: false,
+        allowNull: true,
     },
     date: {
         type: DataTypes.DATEONLY,
-        allowNull: false,
+        allowNull: true,
     },
     last_education: {
         type: DataTypes.STRING,

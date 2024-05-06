@@ -24,10 +24,6 @@ app.use(cors(
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-//test return welcome
-app.use("/", (req, res) => {
-    res.send("Welcome to my API");
-} );
 
 const urlApiV1 = '/api/v1';
 

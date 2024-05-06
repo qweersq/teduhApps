@@ -31,22 +31,27 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
+      isNewUser: {
+        type: Sequelize.BOOLEAN,
+        allowNull: false,
+        defaultValue: true,
+      },
       identity_number: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
         unique: true,
       },
       address: {
         type: Sequelize.STRING,
-        allowNull: false,
+        allowNull: true,
       },
       gender: {
         type: Sequelize.ENUM('male', 'female', 'other'),
-        allowNull: false,
+        allowNull: true,
       },
       date: {
         type: Sequelize.DATEONLY,
-        allowNull: false,
+        allowNull: true,
       },
       last_education: {
         type: Sequelize.STRING,
