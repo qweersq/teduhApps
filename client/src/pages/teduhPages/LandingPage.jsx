@@ -2,21 +2,22 @@ import React from "react";
 import LogoTeduh from "../../assets/images/LogoTeduh.svg";
 import { MdAlternateEmail } from "react-icons/md";
 import { RiLockPasswordLine } from "react-icons/ri";
+import "./mobile.css";
 
 const LandingPage = () => {
   return (
     <div className="container mx-auto py-[20px] px-[20px] font-sans">
       <img className="w-[200px]" src={LogoTeduh} alt="Logo Teduh" />
       <div className="fixed inset-0 flex justify-center items-center">
-        <div className="w-900px flex justify-center items-center rounded-xl">
-          <div className="w-[400px] h-11/12 bg-white rounded-[40px] p-8">
-            <h1 className="text-2xl font-semibold mb-4 text-black">
+        <div className="w-900px w-full md:w-3/4 lg:w-1/2 flex justify-center items-center rounded-xl p-10">
+          <div className="w-[400px] bg-white rounded-[40px] p-8">
+            <h1 className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-black">
               Masuk akun
-              <span className="text-2xl font-extrabold mb-4 text-[#3B3486]">
+              <span className="text-2xl md:text-3xl lg:text-4xl font-extrabold mb-4 text-[#3B3486]">
                 {" "}
                 Teduh
               </span>
-              <span className="text-2xl font-semibold mb-4 text-black">
+              <span className="text-2xl md:text-3xl lg:text-4xl font-semibold mb-4 text-black">
                 {" "}
                 Kamu!
               </span>

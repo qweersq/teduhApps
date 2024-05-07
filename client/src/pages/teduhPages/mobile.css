@@ -1,0 +1,5 @@
+.bgPutih{
+    @media screen and (max-width: 420px){
+        width: 100px;
+    }
+}
