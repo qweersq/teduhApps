@@ -1,15 +1,64 @@
 import React from "react";
 import LogoTeduh from "../../assets/images/LogoTeduh.svg";
+import { MdAlternateEmail } from "react-icons/md";
+import { RiLockPasswordLine } from "react-icons/ri";
 
 const LandingPage = () => {
   return (
-    <div className="container mx-auto py-12 px-[50px]">
-      <img src={LogoTeduh} alt="Logo Teduh" />
-      <div className="flex bg-red-500 items-center">
-        {/* Menggunakan kelas w-full untuk div */}
-        <div className="flex justify-center items-center w-[1000px] h-[500px] ">
-          <div className=" font-bold text-6xl text-center">
-            test
+    <div className="container mx-auto py-[20px] px-[20px] font-sans">
+      <img className="w-[200px]" src={LogoTeduh} alt="Logo Teduh" />
+      <div className="fixed inset-0 flex justify-center items-center">
+        <div className="w-900px flex justify-center items-center rounded-xl">
+          <div className="w-[400px] h-11/12 bg-white rounded-[40px] p-8">
+            <h1 className="text-2xl font-semibold mb-4 text-black">
+              Masuk akun
+              <span className="text-2xl font-extrabold mb-4 text-[#3B3486]">
+                {" "}
+                Teduh
+              </span>
+              <span className="text-2xl font-semibold mb-4 text-black">
+                {" "}
+                Kamu!
+              </span>
+            </h1>
+            <p className="text-gray-600 mb-4 fontPoppins">
+              Silakan mengisi data berikut!
+            </p>
+            <div className="mb-4 relative">
+              <input
+                type="email"
+                placeholder="Masukan Email"
+                className="w-full pl-10 border border-gray-300 rounded-[25px] px-4 py-2 focus:outline-none focus:border-[#3B3486] bg-white text-black"
+              />
+              <div className="absolute inset-y-0 left-0 flex items-center pl-4">
+                <MdAlternateEmail className="text-gray-400" />
+              </div>
+            </div>
+
+            <div className="mb-4. relative">
+              <input
+                type="password"
+                placeholder="Masuka Password"
+                className="w-full pl-10 border border-gray-300 rounded-[25px] px-4 py-2 focus:outline-none focus:border-[#3B3486] bg-white text-black"
+              />
+              <div className="absolute inset-y-0 left-0 flex items-center pl-4">
+                <RiLockPasswordLine className="text-gray-400" />
+              </div>
+            </div>
+            <div className="flex flex-col gap-4 mt-4">
+              <button className="text-white rounded-[25px] px-4 py-2 hover:bg-[#564CC1] focus:outline-none bg-[#3B3486] ">
+                Masuk
+              </button>
+              <button className="rounded-[25px] px-4 py-2 hover:bg-[#564CC1] focus:outline-none bg-[#3B3486] fontPoppins">
+                (Test) Masuk Responden
+              </button>
+            </div>
+            <p className="text-black mt-4 underline">
+              Belum punya akun?{" "}
+              <a href="#" className="text-black font-bold hover:text-[#564CC1]">
+                Buat Akun
+              </a>
+            </p>
           </div>
         </div>
       </div>
