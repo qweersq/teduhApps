@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -28,6 +32,8 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  background-color: #3B3486;
+  align-items: start;
 }
 
 h1 {
@@ -65,4 +71,46 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
+}
+
+.delete{
+  background-color: #ff0000;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.edit{
+  background-color: #1a9a13;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.dahBayar{
+  background-color: #f45959;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: 'montserrat', sans-serif;
+}
+
+.update{
+  background-color: #1a9a13;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-family: 'montserrat', sans-serif;
 }
